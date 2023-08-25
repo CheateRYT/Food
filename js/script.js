@@ -6,11 +6,13 @@ import calculator from './modules/calculator';
 import forms  from './modules/forms';
 import slider from './modules/slider';
 import {openModal} from './modules/modal';
-
+import {$} from './services/services'
 
 window.addEventListener('DOMContentLoaded', function() {
 
     const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300000);
+
+
 
     tabs('.tabheader__item','.tabcontent','.tabheader__items','tabheader__item_active');
     modal('[data-modal]','.modal', modalTimerId);

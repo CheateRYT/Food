@@ -20,6 +20,10 @@ async function getResource(url) {
   return await res.json();
 }
 
+function $(selector) {
+    return document.querySelector(selector);
+}
 
+export {$};
 export {postData};
 export {getResource};
